@@ -103,35 +103,16 @@ CHB04	0.40	0.84	0.04	0.07	0.83
 Even with modest window metrics, the model exhibits strong seizure-level sensitivity, proving that dynamic graph learning captures meaningful preictal structure.
 
 🚀 How to Run
-1. Install Dependencies
-pip install -r requirements.txt
 
-2. Download CHB-MIT Dataset
+Download CHB-MIT Dataset
 
 Dataset link (PhysioNet):
 https://physionet.org/content/chbmit/1.0.0/
 
 Place data in:
-
 /data/CHB-MIT/
+run the ipynb notebook
 
-3. Run Preprocessing
-python preprocess.py
-
-4. Train the Model
-python train_dstgnn.py
-
-5. Generate Visualizations
-python visualize_results.py
-
-🛠️ Project Structure
-│── preprocessing/
-│── models/
-│── utils/
-│── visualizations/
-│── notebooks/
-│   └── Seizure_forecasting_using_dynamic_STGNN.ipynb
-│── README.md
 
 📌 Future Work
 
