@@ -89,17 +89,8 @@ This repo includes powerful interpretation plots:
 ✔ DSTGNN-learned features vs raw EEG
 ✔ Prediction probability curves across time
 ✔ ROC curve
-✔ Graph embeddings + projections
 
 These are essential for making the work publishable and interpretable.
-
-📊 Results (Per Subject)
-Subject	Sensitivity	Specificity	Precision	F1	Accuracy
-CHB01	0.52	0.89	0.06	0.11	0.87
-CHB02	1.00	0.80	0.04	0.08	0.79
-CHB03	0.46	0.92	0.07	0.12	0.90
-CHB04	0.40	0.84	0.04	0.07	0.83
-
 Even with modest window metrics, the model exhibits strong seizure-level sensitivity, proving that dynamic graph learning captures meaningful preictal structure.
 
 🚀 How to Run
