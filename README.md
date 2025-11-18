@@ -4,25 +4,22 @@ This repository contains the full implementation of a Dynamic Spatio-Temporal Gr
 
 Unlike seizure detection, which identifies seizures after they occur, forecasting aims to detect subtle preictal (pre-seizure) patterns before onset, enabling early warning systems for real-world clinical use.
 
-⭐ Key Contributions
+Patient-Specific EEG Forecasting using Dynamic Spatio-Temporal Graph Neural Networks
 
-Built a dynamic graph-based deep learning model that learns time-varying connectivity between EEG channels.
+📌 Overview
 
-Introduced a learnable edge-updater module to adapt connectivity per window.
+This project implements a Dynamic Spatio-Temporal Graph Neural Network (DSTGNN) for patient-specific seizure forecasting using scalp EEG data from the CHB-MIT dataset.
+The model learns:
 
-Designed a full spatio-temporal pipeline with GNNs + GRUs.
+Time-varying functional connectivity between EEG channels
 
-Developed clinically meaningful visualizations, including:
+Dynamic edge reweighting using a learnable edge-updater
 
-Dynamic connectivity evolution
+Spatio-temporal patterns via GNNs + GRUs
 
-Prediction probability curves
+Preictal probability estimation for early seizure warnings
 
-ROC curve
-
-EEG vs. DSTGNN representation comparisons
-
-Performed patient-specific evaluation on multiple CHB-MIT subjects.
+The notebook contains the complete pipeline: preprocessing → graph construction → dynamic GNN model → training → evaluation.
 
 📁 Dataset
 
@@ -80,18 +77,6 @@ Spatial modeling using 2-layer GCN
 Temporal modeling using GRU over T=4 graph windows
 
 Final sigmoid classifier outputs preictal probability
-
-🔍 Visualizations Included
-
-This repo includes powerful interpretation plots:
-
-✔ Dynamic adjacency matrices (connectivity evolution)
-✔ DSTGNN-learned features vs raw EEG
-✔ Prediction probability curves across time
-✔ ROC curve
-
-These are essential for making the work publishable and interpretable.
-Even with modest window metrics, the model exhibits strong seizure-level sensitivity, proving that dynamic graph learning captures meaningful preictal structure.
 
 🚀 How to Run
 
